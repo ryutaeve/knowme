@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= title
+  form(method="POST",action="/create")
+    fieldset
+        p
+            label text
+        input(type="text",name="text")
+    input(type="submit",value="Post")
